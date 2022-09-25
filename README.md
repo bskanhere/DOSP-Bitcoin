@@ -81,14 +81,14 @@ Server Stopped.
 ##  Ratio of CPU time to REAL TIME
 Program was run on 2-core i5 and 8-core M1 <br/>
 i5 2 core - <br/>
-Total CPU Time - 257874 ms 
-Total Wall Clock Time - 73414 ms
-Ratio - 3.5
+Total CPU Time - 257874 ms <br/>
+Total Wall Clock Time - 73414 ms <br/>
+Ratio - 3.5 <br/>
 
 Apple M1 8 Core - <br/>
-Total CPU Time - 115962 ms
-Total Wall Clock Time - 19931 ms
-Ratio - 5.81
+Total CPU Time - 115962 ms <br/>
+Total Wall Clock Time - 19931 ms <br/>
+Ratio - 5.81 <br/>
 
 
 ## The coin with the most number of leading 0s we mined
@@ -97,6 +97,5 @@ Coin mined using M1 Mac as server and running 4 Clients on Mac Intel i5 -
 "0000000088fb4b5512e61ad829822c767838ff50e3deab3e8a52584bfb6e4e92"      "bkanhere;MTYwNTEyNDQzOQ"
 ```
 
-## Largest number of working machines on which we tested our code
-Client machines having 3 terminal open. 
-We connected four i-7 octa core machines locally where 1 was the server with all cores utilized at 100% and 3 miners with one process running on them and utilising only one cpu 100% as we are running only one process on the client.
+## Largest number of working machines on which we tested our code -  1 Server and 4 Clients
+We tested the Distributed implementation using 3 Machines - M1 Mac and 2 Intel i5 Mac by creating a server node on M1 Mac and 2 Clients on each Intel Mac.
