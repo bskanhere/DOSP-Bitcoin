@@ -8,11 +8,10 @@ mine_coins(Pid, K, Start_val, End_val) ->
       RandomStr = binary_to_list(re:replace(Random, "\\W", "", [global, {return, binary}])),
       Val = "bkanhere;"++RandomStr,
       Hash = io_lib:format("~64.16.0b", [binary:decode_unsigned(crypto:hash(sha256, Val))]),
-      ZeroList = lists:duplicate(K, "0"),
-      ZeroVar = string:join(ZeroList, ""),
+      Zero_string = string:join(lists:duplicate(K, "0"), ""),
       Hash_prefix = string:sub_string(Hash, 1, K),
       if
-        Hash_prefix == ZeroVar ->
+        Hash_prefix == Zero_string ->
           Pid ! {mined, Hash, Val};
         true ->
           1
