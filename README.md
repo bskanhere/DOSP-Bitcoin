@@ -52,6 +52,32 @@ Code time=257874000 (73414000) microseconds
 Server Stopped.        
 ```
 
+Run on M1 Mac - 
+ ```
+ (client@10.3.0.51)2> P = server:run(4).
+<0.90.0>
+"0000b003fa258faaaf52af227b465769f875e33e039216dee2c8bca0c8f276e6"       "bkanhere;MzAxNTgyNA" 
+"0000d9cae5eaf9b7267a1a766b53bcf5b8f75644defda31ffe241a906d15853b"       "bkanhere;NjAxMzgwMA" 
+"00002eac8927a5464e2fa20b67fead20a67afca34545ed95fa5877fe8ffb656e"       "bkanhere;NzAxOTM5NQ" 
+"00004bd9548a29c69b3a1cbae816b7ff63127f4fd10cd4c67396e105739f788d"       "bkanhere;NjAyMDE3MQ" 
+"0000795ed5cb89dbab627fc6356a3a499ede5eef4a27938de31a667db80a33f2"       "bkanhere;NTAxMTc1Ng" 
+"0000c313decbe45238b589006a093d5329382d391cb293bf58f6187c6d4262d7"       "bkanhere;MzA3MzQ1Nw" 
+"0000edf06cc2ee44f10911762c7322e38b94b22f56b3b7655a3ddbf8514732b9"       "bkanhere;MTUwNjQ3ODA" 
+(client@10.3.0.51)3> P ! {stop_initiate}.
+Stopping Server.
+{stop_initiate}
+"0000c6b2564e6f00e29a5db86168724668a635d9e89c902f74387fa4f381065c"       "bkanhere;MTIwNDkwOTU" 
+"0000d2317a92d18c60464ed9a04b73fe70df5335540032ace18d535aa7b0c0d1"       "bkanhere;ODUwODQ" 
+"0000f5afe75de27d7e906008d019c3c52ab45bcae316c20a568e609101d84eee"       "bkanhere;MTQwNzE0MTM" 
+"0000a95a819cda83ba08ccfbd6d7067f38d72182ec13586a45bebcd0a8a15190"       "bkanhere;MTE5OTYxMjk" 
+"0000268c184bb35fad2cc60ed17f6f5511baeaf5e7ee63469c80a9c92e6ba1d3"       "bkanhere;MjkzOTU4OA" 
+"000019ec367fb1480685816d5d72b90f907d786a0d51799f1f4439dd8ff106d1"       "bkanhere;Mjk2NjcyNw" 
+"0000e5ddefa401873177561bef3943f53f5229914f8eced79c6bb2e99341a43d"       "bkanhere;Mjk5NjAxMA" 
+Code time=115962000 (19931000) microseconds
+Server Stopped.      
+
+ ```
+
 ##  Ratio of CPU time to REAL TIME
 Program was run on 2-core i5 and 8-core M1 <br/>
 i5 2 core - <br/>
