@@ -8,6 +8,8 @@ While starting the erlang nodes use the following commands - <br/>
 server node --> erl -name server@{ip address of the server} -setcookie {secret} <br/>
 client node -->  erl -name client@{ip address of the client} -setcookie {secret} <br/>
 IMP - The secret value of the cookie has to be SAME across nodes for them to be able to connect. <br/>
+<br/>
+The Code base has 3 file - work.erl, server.erl, client.erl .
 1. Compile work -> c(work). <br/>
 2. Compile server -> c(server). <br/>
 3. Compile client -> c(client). <br/>
@@ -18,7 +20,7 @@ IMP - The secret value of the cookie has to be SAME across nodes for them to be 
 ### Work Logic
 work.erl has the logic for an actor to process strings incrementally from the given start value to the given end value and mine bitcoins that have the given number of leading 0s.
 ### Server Logic
-server.erl spawns a server process that selects and keeps track of ranges of incremental strings that are to be provided to the worker/client for mining bitcoins. The server spawns 8 workers on the same node for mining. Clients using the server's node name can connect with the servers and also participate in the mining process. Whenever the bitcoin is found from either the server itself or the client, it prints the bitcoin.
+server.erl spawns a server process that selects and keeps track of ranges of incremental strings that are to be provided to the worker/client for mining bitcoins.<br/> The server spawns 8 workers on the same node for mining. 8 chosen based on the number of cores.<br/> Clients using the server's node name can connect with the servers and also participate in the mining process.<br/> Whenever the bitcoin is found from either the server itself or the client, it prints the bitcoin.<br/> Server on receipt of message {stop_initiate} begins a gracefull shutdown waiting for all workers and clients to complete before finally shutting down.<br/>
 ### Client Logic
 The client uses the server's node name(IP address) to connect with the server and get a range of string values to process. Whenever it finds a bitcoin, it sends a message with details to the server.
 
@@ -28,6 +30,8 @@ This also ensures that if a client fails the amount of unit not getting processe
 Also, the chances of various actors processing the same string reduces.
 
 ## Result of running program for input 4
+
+Code time=1398634000 (234877000) microseconds
 
 ##  Ratio of CPU time to REAL TIME
 Program was run on 8-core M1 and 2-core i5
