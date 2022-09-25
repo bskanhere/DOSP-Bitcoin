@@ -31,7 +31,7 @@ Also, the chances of various actors processing the same string reduces.
 
 ## Result of running program for input 4
 Run on Intel Mac - 
-'''
+```
 (server@10.20.84.32)2> P = server:run(4).
 <0.97.0>
 "0000795ed5cb89dbab627fc6356a3a499ede5eef4a27938de31a667db80a33f2"       "bkanhere;NTAxMTc1Ng" 
@@ -50,14 +50,23 @@ Stopping Server.
 "0000806b601c97c0c96f1306c8d9b0cc90cadca470c3b23b93de9244efd4bc32"       "bkanhere;OTk4Mjg0MQ" 
 Code time=257874000 (73414000) microseconds
 Server Stopped.        
-'''
-
-Code time=1398634000 (234877000) microseconds
+```
 
 ##  Ratio of CPU time to REAL TIME
-Program was run on 8-core M1 and 2-core i5
+Program was run on 2-core i5 and 8-core M1 <br/>
+i5 2 core - <br/>
+Total CPU Time - 257874 ms 
+Total Wall Clock Time - 73414 ms
+Ratio - 3.5
+
+Apple M1 8 Core - <br/>
+Total CPU Time - 1398634 ms
+Total Wall Clock Time - 234877 ms
+Ratio - 5.95
+
 
 ## The coin with the most number of leading 0s we mined
+Coin mined using M1 Mac as server and running 4 Clients on Mac Intel i5 - 
 
 
 ## Largest number of working machines on which we tested our code
