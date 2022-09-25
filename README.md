@@ -86,9 +86,9 @@ Total Wall Clock Time - 73414 ms
 Ratio - 3.5
 
 Apple M1 8 Core - <br/>
-Total CPU Time - 1398634 ms
-Total Wall Clock Time - 234877 ms
-Ratio - 5.95
+Total CPU Time - 115962 ms
+Total Wall Clock Time - 19931 ms
+Ratio - 5.81
 
 
 ## The coin with the most number of leading 0s we mined
