@@ -93,7 +93,9 @@ Ratio - 5.81
 
 ## The coin with the most number of leading 0s we mined
 Coin mined using M1 Mac as server and running 4 Clients on Mac Intel i5 - 
-
+```
+"0000000088fb4b5512e61ad829822c767838ff50e3deab3e8a52584bfb6e4e92"      "bkanhere;MTYwNTEyNDQzOQ"
+```
 
 ## Largest number of working machines on which we tested our code
 Client machines having 3 terminal open. 
