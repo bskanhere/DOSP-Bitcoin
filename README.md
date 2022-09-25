@@ -30,6 +30,27 @@ This also ensures that if a client fails the amount of unit not getting processe
 Also, the chances of various actors processing the same string reduces.
 
 ## Result of running program for input 4
+Run on Intel Mac - 
+'''
+(server@10.20.84.32)2> P = server:run(4).
+<0.97.0>
+"0000795ed5cb89dbab627fc6356a3a499ede5eef4a27938de31a667db80a33f2"       "bkanhere;NTAxMTc1Ng" 
+"0000b003fa258faaaf52af227b465769f875e33e039216dee2c8bca0c8f276e6"       "bkanhere;MzAxNTgyNA" 
+"0000a4e9c6112e94f6bfa2de07e3a858e7a9a51e4978dc310204a4e5b0d1a2fa"       "bkanhere;MjA2MzcwOA" 
+"00007834468c77e5eedfd8b7cd11bdc3a2f79bb303150b48bf017e6e4036b24a"       "bkanhere;MjEwMzA3NQ" 
+"0000c313decbe45238b589006a093d5329382d391cb293bf58f6187c6d4262d7"       "bkanhere;MzA3MzQ1Nw" 
+"00007a39d99c56b9a35d16959d82162c6590dba21f293ca9d50105ab0bcfc181"       "bkanhere;MjE0ODk2NQ"
+"0000b2f63168942dc3936c736935c482afa634905fa24d65cc6a3385266d0202"       "bkanhere;NzIyODUwOA" 
+(server@10.20.84.32)3> P ! {stop_initiate}.
+Stopping Server.
+{stop_initiate}
+"0000414cf7ecda0bbda944ff0e130801f18129a94df58f4c1ff968e905e95e66"       "bkanhere;NTU3OTc1Nw" 
+"0000a1388f6cfba91a0d27375311e687109325937f68510fc842c2cba1e9d8df"       "bkanhere;NzIzNjI5Mg" 
+"00008ac1d837e1f5803030f24077ff6587032c463900a4759184a55aabe34c7e"       "bkanhere;OTk3ODk2MA" 
+"0000806b601c97c0c96f1306c8d9b0cc90cadca470c3b23b93de9244efd4bc32"       "bkanhere;OTk4Mjg0MQ" 
+Code time=257874000 (73414000) microseconds
+Server Stopped.        
+'''
 
 Code time=1398634000 (234877000) microseconds
 
