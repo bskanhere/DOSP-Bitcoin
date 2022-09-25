@@ -27,14 +27,10 @@ The work unit is 1,000,000. The reason for choosing this value is that, the proc
 This also ensures that if a client fails the amount of unit not getting processed is not very large. Moreover, this ensures all clients checkin with the server from time to time which helps the server to keep track of all the actors and ensures the actors can shut down when the user wishes to.
 Also, the chances of various actors processing the same string reduces.
 
-## Result for ./project1 4
-The Result for running the ./project1 4 program on an 8-core intel core i7 is as follows
-#### Input
-./project1 4 <br/>
-#### Output
+## Result of running program for input 4
 
-### CPU Utilisation for ./project 5
-Result of running the program on an 8-core intel core i7 for ./project1 5 is
+##  Ratio of CPU time to REAL TIME
+Program was run on 8-core M1 and 2-core i5
 
 ## The coin with the most number of leading 0s we mined
 
